@@ -1,0 +1,140 @@
+.Navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top__bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    background: #303b44;
+}
+
+.top__bar__sections {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__section {
+    font-family: Tahoma, serif;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 8px;
+    border-right: 1px solid hsla(0,0%,100%,.24);
+    text-decoration: none;
+}
+
+.user__section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user__section__item {
+    margin-left: 32px;
+    color: white;
+}
+.user__section__item a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+.user__section__item a:hover {
+    text-decoration: underline;
+}
+
+.user__section__item img {
+    width: 18px;
+    height: 18px;
+
+}
+
+.user__section__item__usrBtn {
+    display: flex;
+    cursor: pointer;
+}
+
+.user__section__item__usrBtn img {
+    width: 32px;
+    height: 32px;
+}
+
+.user__section__dropdown {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 48px;
+    min-width: 256px;
+    max-width: 256px;
+    min-height: 100px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #bdbdbd;
+}
+.user__section__dropdown__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 18px;
+    color: #333;
+}
+
+.user__section__dropdown__item:hover {
+    background: #edf5f9;
+}
+
+.user__section__dropdown__item:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+.user__section__dropdown__open {
+    display: flex;
+}
+
+/*#548eaa*/
+
+.bottom__bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    background: white;
+    border-bottom: 1px solid #dedede;
+}
+
+.bottom__bar__sections {
+    height: 100%;
+}
+
+.menu__section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #62757f;
+    font-size: 0.875rem;
+}
+.menu__item:first-child {
+    padding-left: 0;
+}
+.menu__item:last-child {
+    padding-right: 0;
+}
+.menu__item:hover {
+    color: #c1d5e0;
+}
