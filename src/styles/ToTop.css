@@ -1,0 +1,25 @@
+.ToTop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5%;
+    background: rgba(193, 213, 224, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ToTop:hover {
+    background: rgba(193, 213, 224, .4);
+}
+
+.ToTop__hide {
+    display: none;
+}
+
+.ToTop img {
+    width: 32px;
+    height: 32px;
+}

@@ -17,6 +17,10 @@ body {
     min-width: 640px;
 }
 
+.content__width {
+    max-width: 976px;
+}
+
 @media (min-width: 1024px) {
     .page__width {
         padding: 0 24px;

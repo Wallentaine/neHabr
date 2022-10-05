@@ -7,17 +7,17 @@ import commentsIcon from '../../assets/images/icon-comments.svg'
 const PostItem = () => {
     return (
         <div className="post__item">
-            <div className="post__head">
+            <div className="post__head content__width">
                 <div className="post__head__user__icon"></div>
                 <div className="post__head__user__name">Wallentaine</div>
                 <div className="post__head__user__date">Сегодня в 10:43</div>
             </div>
 
-            <div className="post__title">
+            <div className="post__title content__width">
                 Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit.
             </div>
-            <div className="post__tags">
+            <div className="post__tags content__width">
                 <div className="post__tags__item">Lorem</div>
                 <div className="post__tags__item">ipsum</div>
                 <div className="post__tags__item">dolor</div>
@@ -33,10 +33,10 @@ const PostItem = () => {
                 <div className="post__tags__item">esse</div>
                 <div className="post__tags__item">quod</div>
             </div>
-            <div className="post__preview">
+            <div className="post__preview content__width">
                 <img src="https://media.tproger.ru/uploads/2019/04/learn-programming.png" alt=""/>
             </div>
-            <div className="post__description">
+            <div className="post__description content__width">
                 Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Ad, alias dolorum eligendi
                 eos esse et harum laborum libero magni numquam placeat quae quaerat quibusdam
@@ -57,7 +57,7 @@ const PostItem = () => {
             <div className="post__open__btn">
                 <Link>Читать дальше →</Link>
             </div>
-            <div className="post__activity">
+            <div className="post__activity content__width">
                 <div className="post__activity__item">
                     <img src={eyeIcon} alt=""/>
                     <span>450</span>

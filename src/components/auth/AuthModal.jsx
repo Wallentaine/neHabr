@@ -13,10 +13,10 @@ const AuthModal = ({isLogin}) => {
             <div className="auth__modal__title">{isLogin ? 'Авторизация' : 'Регистрация'}</div>
             <div className="auth__modal__form">
                 <div className="auth__modal__form__input">
-                    <DefaultInput placeholder="Введите e-mail"/>
+                    <DefaultInput type="text" placeholder="Введите e-mail"/>
                 </div>
                 <div className="auth__modal__form__input">
-                    <DefaultInput placeholder="Введите пароль"/>
+                    <DefaultInput type="password" placeholder="Введите пароль"/>
                 </div>
                 <div className="auth__modal__form__button">
                     <DefaultButton>{isLogin ? 'Войти' : 'Зарегистрироваться'}</DefaultButton>
