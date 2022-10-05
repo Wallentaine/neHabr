@@ -1,0 +1,72 @@
+.Auth {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.auth__modal {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: white;
+    padding: 20px;
+}
+
+.auth__modal__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3135;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.auth__modal__form {
+
+}
+
+.auth__modal__form__input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.auth__modal__form__button {
+    margin-bottom: 32px;
+}
+
+.auth__modal__form__otherActions {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__modal__form__otherActions__title {
+    padding-right: 16px;
+}
+
+.auth__modal__form__haveAccount {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.auth__modal__form__haveAccount a {
+    color: #62757f;
+    text-decoration: none;
+}
+
+.auth__modal__form__haveAccount a:hover {
+    color: #c1d5e0;
+}
+.auth__modal__form__forgotPassword {
+    display: flex;
+    align-items: center;
+}
+.auth__modal__form__forgotPassword a {
+    color: #62757f;
+    text-decoration: none;
+}
+
+.auth__modal__form__forgotPassword a:hover {
+    color: #c1d5e0;
+}

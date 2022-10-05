@@ -1,0 +1,14 @@
+.DefaultButton {
+    outline: none;
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #75aeca;
+    color: #75aeca;
+    background: white;
+    cursor: pointer;
+}
+
+.DefaultButton:hover {
+    background: #75aeca;
+    color: white;
+}

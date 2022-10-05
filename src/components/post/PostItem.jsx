@@ -41,6 +41,18 @@ const PostItem = () => {
                 consectetur adipisicing elit. Ad, alias dolorum eligendi
                 eos esse et harum laborum libero magni numquam placeat quae quaerat quibusdam
                 quod quos rem tempora velit voluptatibus?
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Ad, alias dolorum eligendi
+                eos esse et harum laborum libero magni numquam placeat quae quaerat quibusdam
+                quod quos rem tempora velit voluptatibus?
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Ad, alias dolorum eligendi
+                eos esse et harum laborum libero magni numquam placeat quae quaerat quibusdam
+                quod quos rem tempora velit voluptatibus?
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Ad, alias dolorum eligendi
+                eos esse et harum laborum libero magni numquam placeat quae quaerat quibusdam
+                quod quos rem tempora velit voluptatibus?
             </div>
             <div className="post__open__btn">
                 <Link>Читать дальше →</Link>

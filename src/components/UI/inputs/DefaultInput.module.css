@@ -1,0 +1,7 @@
+.DefaultInput {
+    width: 100%;
+    padding: 8px 16px;
+    outline: none;
+    border: 1px solid #75aeca;
+    color: black;
+}

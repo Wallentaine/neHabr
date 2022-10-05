@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import '../../styles/Navbar.css'
 import {Link} from "react-router-dom"
-import {MAIN_ROUTE} from "../../utils/consts"
+import {AUTH_ROUTE, MAIN_ROUTE} from "../../utils/consts"
 import searchIcon from '../../assets/images/icon-search.svg'
 import plusIcon from '../../assets/images/icon-pen.svg'
 import userIcon from '../../assets/images/icon-user-2.svg'
@@ -9,7 +9,7 @@ import userIcon from '../../assets/images/icon-user-2.svg'
 const Navbar = () => {
 
     const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
-    const isAuth = true
+    const isAuth = false
 
     return (
         <div className="Navbar">
@@ -36,7 +36,12 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <div className={dropdownIsOpen? "user__section__dropdown user__section__dropdown__open" : "user__section__dropdown"}>
-                                <div className="user__section__dropdown__item">Hello</div>
+                                <div className="user__section__dropdown__item">
+                                    <div className="user__section__dropdown__item__usrMenu">
+                                        <div className="user__section__dropdown__item__usrMenu__accountImg"></div>
+                                        <div className="user__section__dropdown__item__usrMenu__userName">@Wallentaine</div>
+                                    </div>
+                                </div>
                                 <div className="user__section__dropdown__item">Hello</div>
                                 <div className="user__section__dropdown__item">Hello</div>
                                 <div className="user__section__dropdown__item">Hello</div>
@@ -45,7 +50,9 @@ const Navbar = () => {
                         :
                         <div className="user__section">
                             <div className="user__section__item">
-                                <Link>Войти</Link> или <Link>Зарегистрироваться?</Link>
+                                <Link to={AUTH_ROUTE + '/login'}>Войти</Link>
+                                <span>или</span>
+                                <Link to={AUTH_ROUTE + '/registration'}>Зарегистрироваться?</Link>
                             </div>
                         </div>
                     }

@@ -37,9 +37,15 @@
 }
 
 .user__section__item {
+    display: flex;
     margin-left: 32px;
     color: white;
 }
+
+.user__section__item span {
+    padding: 0 10px;
+}
+
 .user__section__item a {
     text-decoration: none;
     color: white;
@@ -79,12 +85,16 @@
     box-shadow: 0 0 8px #bdbdbd;
 }
 .user__section__dropdown__item {
-    cursor: pointer;
     display: flex;
     align-items: center;
     width: 100%;
     padding: 18px;
     color: #333;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.user__section__dropdown__item:first-child:hover {
+    background: white;
 }
 
 .user__section__dropdown__item:hover {
@@ -97,6 +107,23 @@
 
 .user__section__dropdown__open {
     display: flex;
+}
+
+.user__section__dropdown__item__usrMenu {
+    display: flex;
+    align-items: center;
+}
+
+.user__section__dropdown__item__usrMenu__accountImg {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #c1d5e0;
+    border-radius: 6px;
+    margin-right: 16px;
+}
+
+.user__section__dropdown__item__usrMenu__userName {
+    color: #548eaa;
 }
 
 /*#548eaa*/

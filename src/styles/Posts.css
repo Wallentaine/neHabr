@@ -82,6 +82,11 @@
     margin-right: 6px;
     margin-bottom: 6px;
     color: #6667a3;
+    cursor: pointer;
+}
+.post__tags__item:hover {
+    background: #b0b0e2;
+    color: white;
 }
 
 .post__preview {
@@ -95,6 +100,7 @@
 }
 
 .post__description {
+    line-height: 1.6;
     display: flex;
     flex-wrap: wrap;
     color: #111111;

@@ -21,9 +21,13 @@ export const publicRoutes = [
 
 export const unauthorizedRoutes = [
     {
-        path: AUTH_ROUTE,
+        path: AUTH_ROUTE + '/login',
         Component: Auth
-    }
+    },
+    {
+        path: AUTH_ROUTE + '/registration',
+        Component: Auth
+    },
 ]
 
 export const authorizedRoutes = [
