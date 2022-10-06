@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import '../styles/Tags.css'
 import TagsHeader from "../components/tags/TagsHeader"
 import TagsBody from "../components/tags/TagsBody"
@@ -46,6 +46,30 @@ const mockTags = [
         id: 9,
         name: "Node.js",
     },
+    {
+        id: 10,
+        name: "Php",
+    },
+    {
+        id: 11,
+        name: "React",
+    },
+    {
+        id: 12,
+        name: "Express",
+    },
+    {
+        id: 13,
+        name: "Sql",
+    },
+    {
+        id: 14,
+        name: "MySQL",
+    },
+    {
+        id: 15,
+        name: "PostgresQL",
+    },
 ]
 
 const Tags = () => {
@@ -55,7 +79,6 @@ const Tags = () => {
     const [searchText, setSearchText] = useState('')
 
     const showSearchClick = () => {
-        setTags([])
         setShowSearch(!showSearch)
         setSearchText('')
     }
@@ -65,6 +88,10 @@ const Tags = () => {
         setShowSearch(false)
         setTags(mockTags)
     }
+
+    useEffect(() => {
+        setTags(mockTags)
+    }, [])
 
 
     return (
@@ -77,7 +104,12 @@ const Tags = () => {
                 setSearchText={setSearchText}
             />
             <TagsBody
-                tags={tags}
+                tags={tags.filter((item) => {
+                    if (searchText === '') {
+                        return true
+                    }
+                    return item.name.toLowerCase().includes(searchText.toLowerCase())
+                })}
             />
         </div>
     )

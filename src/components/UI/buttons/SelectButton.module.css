@@ -1,0 +1,19 @@
+.SelectButton {
+    outline: none;
+    padding: 8px 24px;
+    color: #548eaa;
+    border: 1px solid #548eaa;
+    background: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.SelectButton:hover {
+    background: #548eaa;
+    color: white;
+}
+
+.isSelect {
+    background: #548eaa;
+    color: white;
+}

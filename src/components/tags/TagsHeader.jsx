@@ -1,5 +1,5 @@
 import React from 'react'
-import DefaultInput from "../UI/inputs/DefaultInput"
+import SearchInput from "../UI/inputs/SearchInput"
 
 const TagsHeader = ({showSearchClick, allTagsClick, showSearch, searchText, setSearchText}) => {
 
@@ -16,7 +16,7 @@ const TagsHeader = ({showSearchClick, allTagsClick, showSearch, searchText, setS
                 </div>
             </div>
             <div className={showSearch ? "tags__header__search__menu" : "tags__header__search__menu tags__header__search__menu__hide"}>
-                <DefaultInput
+                <SearchInput
                     placeholder="Поиск по тэгам..."
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
