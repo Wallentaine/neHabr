@@ -123,11 +123,11 @@
     height: 100%;
 }
 
-.companies__body__tItem__companyInfo__logo img {
+.companies__body__tItem__companyInfo__logo div {
     width: 32px;
     height: 32px;
     border-radius: 4px;
-    border: 1px solid #c1d5e0;
+    border: 2px solid #c1d5e0;
 }
 
 .companies__body__tItem__companyInfo__block {

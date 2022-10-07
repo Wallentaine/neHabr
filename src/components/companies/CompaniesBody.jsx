@@ -3,6 +3,8 @@ import CompaniesBodyTableHead from "./CompaniesBodyTableHead"
 import CompaniesBodyTableItem from "./CompaniesBodyTableItem"
 
 const CompaniesBody = () => {
+
+
     return (
         <div className="CompaniesBody">
             <CompaniesBodyTableHead/>
