@@ -18,7 +18,7 @@ body {
 }
 
 .content__width {
-    max-width: 976px;
+    max-width: 640px;
 }
 
 @media (min-width: 1024px) {
@@ -26,5 +26,9 @@ body {
         padding: 0 24px;
         min-width: 1024px;
         max-width: 1096px;
+    }
+    .content__width {
+        min-width: 864px;
+        max-width: 936px
     }
 }

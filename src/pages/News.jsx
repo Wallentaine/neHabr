@@ -1,11 +1,13 @@
 import React from 'react'
 import '../styles/News.css'
-import PostsList from "../components/post/PostsList"
+import NewsHead from "../components/news/NewsHead"
+import NewsList from "../components/news/NewsList"
 
 const News = () => {
     return (
         <div className="News page__width">
-            <PostsList/>
+            <NewsHead/>
+            <NewsList/>
         </div>
     )
 }

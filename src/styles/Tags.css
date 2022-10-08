@@ -8,11 +8,21 @@
 .tags__header {
     width: 100%;
     background: white;
-    padding: 20px;
     margin-bottom: 20px;
 }
 
+.tags__header__title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.tags__header__empty__space {
+    border-bottom: 1px solid #d5dddf;
+}
+
 .tags__header__items {
+    padding: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -20,7 +30,7 @@
 
 .tags__header__item {
     margin-right: 20px;
-    padding: 8px 16px;
+    padding: 12px 24px;
     border: 1px solid #c1d5e0;
     border-radius: 4px;
     color: #62757f;
@@ -48,9 +58,13 @@
 
 .tags__body {
     display: flex;
-    width: 100%;
-    background: white;
     padding: 20px;
+    background: white;
+}
+
+.tags__body__tags__list {
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
 }
 

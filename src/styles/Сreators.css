@@ -132,21 +132,21 @@
 
 .creators__body__tItem__creatorPosts {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
     color: #548eaa;
 }
 
 .creators__body__tItem__creatorRating {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
     color: #cd66cd;
 }
 
 .creators__body__tItem__creatorSubscribers {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
     color: #777;
 }

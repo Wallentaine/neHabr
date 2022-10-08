@@ -7,6 +7,8 @@ const TagsHeader = ({showSearchClick, allTagsClick, showSearch, searchText, setS
     return (
         <>
             <div className="tags__header">
+                <div className="tags__header__title">Все тэги</div>
+                <div className="tags__header__empty__space"></div>
                 <div className="tags__header__items content__width">
                     <button className="tags__header__item" onClick={showSearchClick}>Поиск</button>
                     <button
